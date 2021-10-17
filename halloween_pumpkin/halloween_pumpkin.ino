@@ -18,7 +18,7 @@
 #define SERVO_CHANGE_PERIOD   3000  // период изменения положения сервы в мс
 
 #define SPEAKER_SPEAK_PERIOD  5000  // частота воспроизведения звука в мс
-#define TIMER2_SCALER   5     // несущая частота ШИМ = 62.5 кГц => 62.5 / 8 = 7.8 ~ 8 кГц
+#define TIMER2_SCALER   3     // 3  // несущая частота ШИМ = 62.5 кГц => 62.5 / 8 = 7.8 ~ 8 кГц
                               // можно уменьшать, тогда звуковая дорожка будет ускоряться 
 CRGB leds[LED_NUM_LEDS];
 Servo servo;
@@ -78,7 +78,7 @@ void loop()
     servoTargetPos = random(SERVO_MIN_POS, SERVO_MAX_POS);  // устанавливаем случайную позицию из допустимого диапазона
     servoChangeTimer = millis();
   }  
-  servo.write(yieldServoStep(servoTargetPos, 1)); // каждую итерацию делает шаг в 1 градус
+  servo.write(yieldServoStep(servoTargetPos, 2)); // каждую итерацию делает шаг в 1 градус
   
   Fire2012(); // run simulation frame
   FastLED.show(); // display this frame
@@ -187,7 +187,7 @@ uint8_t yieldServoStep(uint8_t pos, uint8_t step)  // генератор пол�
 {
   static uint8_t currentPos = SERVO_BASE_POS;
   int16_t diff = (int16_t)pos - currentPos; // определяем расстояние до новой позиции
-  if (diff == 0) return currentPos;
+  if ((diff == 0) || (abs(diff) < step)) return currentPos;
   
   currentPos += (diff / abs(diff)) * step;  // определяем направление через знак и добавляем шаг по напралению движения
   return currentPos;
