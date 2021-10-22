@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="ссылка на видео"><img src="https://github.com/TrashRobotics/HalloweenPumpkin/blob/main/img/pumpkin.jpg" alt="Хеллоуинская тыква" width="800"></a>
+  <a href="https://youtu.be/5vg97RzdjV4"><img src="https://github.com/TrashRobotics/HalloweenPumpkin/blob/main/img/pumpkin.jpg" alt="Хеллоуинская тыква" width="800"></a>
   <br>
     Хеллоуинская тыква
   <br>
@@ -23,7 +23,7 @@
 * модуль из 8 светодиодов WS2812 (кольцо);
 * небольшой динамик (я снял со старого телефона);
 * hw-517 или другой транзисторный ключ; 
-* [тыква, корпус и т.д.](ссылка на thingiverse)
+* [тыква, корпус и т.д.](https://www.thingiverse.com/thing:5027509)
 
 ### Крепеж
 * Саморез DIN7981 2.9x9.5 x4;
