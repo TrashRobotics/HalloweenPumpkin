@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="ссылка на видео"><img src="https://github.com/TrashRobotics/HalloweenPumpkin/blob/main/img/pumpkin.jpg" alt="HalloweenPumpkin" width="800"></a>
+  <a href="https://youtu.be/5vg97RzdjV4"><img src="https://github.com/TrashRobotics/HalloweenPumpkin/blob/main/img/pumpkin.jpg" alt="HalloweenPumpkin" width="800"></a>
   <br>
     Halloween Pumpkin
   <br>
@@ -23,7 +23,7 @@ Halloween pumpkin in a hurry
 * 8 LED module WS2812 (ring);
 * small speaker (I removed it from the old phone);
 * hw-517 or other transistor switch; 
-* [pumpkin, body and etc.](ссылка на thingiverse)
+* [pumpkin, body and etc.](https://www.thingiverse.com/thing:5027509)
 
 ### Fasteners
 * Self-tapping screw DIN7981 2.9x9.5 x4;
